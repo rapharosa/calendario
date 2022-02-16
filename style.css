@@ -6,7 +6,8 @@
 }
 
 :root {
-    --preto: #191919;
+    --preto: #1f1f1f;
+    --cinza: #3f3f3f;
     --amarelo: #fff134;
     --laranja: #fc8f00;
     --branco: #f5f5f5;
@@ -77,6 +78,7 @@ body {
 .dias {
     display: flex;
     flex-wrap: wrap;
+    background-color: var(--cinza);
 }
 
 .dias div {

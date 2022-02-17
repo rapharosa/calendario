@@ -1,4 +1,5 @@
 * {
+    font-family: 'Teko', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -40,16 +41,16 @@ body {
 }
 
 .mes-titulo {
-    font-size: 3em;
-    padding-top: 1rem;
+    font-size: 4em;
+    padding-top: 0.5rem;
     color: var(--preto);
     text-transform: uppercase;
     text-align: center;
 }
 
 .mes-data-completa {
-    font-size: 2em;
-    padding: 1rem;
+    font-size: 3em;
+    padding: 0.5rem;
     text-align: center;
     color: var(--preto);
 }
@@ -79,9 +80,11 @@ body {
     background-color: var(--preto);
 }
 
+
+
 .dias div {
     color: var(--amarelo);
-    font-size: 0.75rem;
+    font-size: 1rem;
     width: calc(320px / 7);
     text-align: center;
     padding: 1rem 0;
@@ -94,4 +97,11 @@ body {
     color: var(--preto);
     background-color: var(--amarelo);
     border-radius: 50%;
+}
+div .mes-anterior {
+    color: var(--branco);
+}
+
+div .proximo-mes {
+    color: var(--branco);
 }

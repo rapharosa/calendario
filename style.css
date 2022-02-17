@@ -105,6 +105,18 @@ div .mes-anterior {
     color: var(--branco);
 }
 
+div.mes-anterior:hover {
+    color: var(--preto);
+    background-color: var(--branco);
+    border-radius: 50%;
+}
+
 div .proximo-mes {
     color: var(--branco);
+}
+
+div.proximo-mes:hover {
+    color: var(--preto);
+    background-color: var(--branco);
+    border-radius: 50%;
 }

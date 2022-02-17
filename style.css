@@ -61,7 +61,7 @@ body {
     padding: 0 0.4rem;
     display: flex;
     align-items: center;    
-    background-color: var(--preto);
+    background-color: var(--amarelo);
 }
 
 .dias-semana div {
@@ -71,14 +71,12 @@ body {
     width: 45px;
     height: 40px;
     text-align: center;
-    border-radius: 50%;
-    background-color: var(--amarelo);
 }
 
 .dias {
     display: flex;
     flex-wrap: wrap;
-    background-color: var(--cinza);
+    background-color: var(--preto);
 }
 
 .dias div {
@@ -87,6 +85,13 @@ body {
     width: calc(320px / 7);
     text-align: center;
     padding: 1rem 0;
-    border-radius: 50%;
     background-color: var(--preto);
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+.dias div:hover {
+    color: var(--preto);
+    background-color: var(--amarelo);
+    border-radius: 50%;
 }

@@ -1,6 +1,7 @@
 //Constante com data atual
 //quando usamos data.getMonth() retorna uma lista com Jan de indice 0
 const data = new Date();
+console.log(data.getDate());
 
 const renderizarCalendario = () => {
     data.setDate(1)
@@ -47,7 +48,7 @@ const renderizarCalendario = () => {
     //Metodo para gerar lista de dias do mes utilizando variavel do ultimoDia
     for(let i = 1; i <= ultimoDia; i++) {
         if(i === new Date().getDate() && data.getMonth() === new Date().getMonth()) {
-            dias += `<div>${i}</div>`;
+            dias += `<div class = "hoje">${i}</div>`;
         } else {
             dias += `<div>${i}</div>`;
         }    

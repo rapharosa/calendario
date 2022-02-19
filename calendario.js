@@ -1,7 +1,6 @@
 //Constante com data atual
 //quando usamos data.getMonth() retorna uma lista com Jan de indice 0
 const data = new Date();
-console.log(data.getDate());
 
 const renderizarCalendario = () => {
     data.setDate(1)

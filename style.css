@@ -105,6 +105,7 @@ body {
     padding: .75rem 0;
     border-radius: 50%;
     transition: 0.3s;
+    cursor: pointer;
 }
 
 .dias div:hover {
@@ -114,6 +115,7 @@ body {
 }
 div .outro-mes {
     color: var(--branco);
+    cursor: initial;
 }
 
 div .outro-mes:hover {

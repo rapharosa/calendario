@@ -49,12 +49,14 @@ body {
     color: var(--preto);
     text-transform: uppercase;
     text-align: center;
+    text-shadow: 1px 1px 2px var(--preto);
 }
 
 .mes-data-completa {
     font-size: 2em;
     text-align: center;
     color: var(--preto);
+    text-shadow: 1px 1px 1px var(--preto);
 }
 
 .dias-semana {
@@ -66,6 +68,7 @@ body {
     display: flex;
     align-items: center;    
     background-color: var(--cinza);
+    text-shadow: 1px 1px 2px var(--preto);
 }
 
 .dias-semana div {
@@ -83,7 +86,9 @@ body {
     background-color: var(--preto);
 }
 
-
+.hoje {
+    background-color: var(--cinza);
+}
 
 .dias div {
     color: var(--amarelo);
@@ -91,9 +96,8 @@ body {
     width: calc(320px / 7);
     text-align: center;
     padding: .75rem 0;
-    background-color: var(--preto);
     border-radius: 50%;
-    transition: 0.5s;
+    transition: 0.3s;
 }
 
 .dias div:hover {
@@ -120,3 +124,4 @@ div.proximo-mes:hover {
     background-color: var(--branco);
     border-radius: 50%;
 }
+

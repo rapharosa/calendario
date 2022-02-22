@@ -8,36 +8,30 @@ const renderizarCalendario = () => {
     //Criando variavel para gerar lista numerica dos dias
     const diasDoMes = document.querySelector('.dias');
     let dias = "";
-
     //criando variavel para identificar o ultimo dia de cada mes
-    const ultimoDia = new Date(data.getFullYear(), data.getMonth() + 1, 0).getDate();
-
+    const ultimoDia = new Date(data.getFullYear(), data.getMonth() + 1,0).getDate();
     //criando variavel para identificar o primeiro dia de cada mes
     const diasMesAnterior = new Date(data.getFullYear(), data.getMonth(),0).getDate();
-   
     //index do primeiro dia do mes
     const primeiroDiaIndex = data.getDay()
-
     //index do ultimo dia do mes
     const ultimoDiaIndex = new Date(data.getFullYear(), data.getMonth() + 1,0).getDay();
-
     //index dos dias da semana
     const proximosDias = 7 - ultimoDiaIndex - 1;
-
     //Lista de meses
     const meses = [
-        "Janeiro",
-        "Fevereiro",
-        "Março",
-        "Abril",
-        "Maio",
-        "Junho",
-        "Julho",
-        "Agosto",
-        "Setembro",
-        "Outubro",
-        "Novembro",
-        "Dezembro"
+        "Jan",
+        "Fev",
+        "Mar",
+        "Abr",
+        "Mai",
+        "Jun",
+        "Jul",
+        "Ago",
+        "Set",
+        "Out",
+        "Nov",
+        "Dez"
     ];
 
     //Insere o mês no HTML usando o indice correspondente ao mes atual
@@ -61,21 +55,18 @@ const renderizarCalendario = () => {
 
     for(let j = 1; j <= proximosDias; j++) {
         dias += `<div class = "outro-mes">${j}</div>`;
-        diasDoMes.innerHTML = dias;
     }
+    diasDoMes.innerHTML = dias;
 }
 
-//faz com que ao clicar passa para o mes anterior
 document.querySelector('.anterior').addEventListener('click', () => {
     data.setMonth(data.getMonth() - 1);
     renderizarCalendario();
 })
 
-//faz com que ao clicar passa para o proximo mes
 document.querySelector('.proximo').addEventListener('click', () => {
     data.setMonth(data.getMonth() + 1);
     renderizarCalendario();
 })
 
 renderizarCalendario();
-console.log(dias);
